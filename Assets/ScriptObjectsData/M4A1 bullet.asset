@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a07894fbe5c2c146aa9d5b33d639bd2, type: 3}
   m_Name: M4A1 bullet
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8295358692933626332, guid: f9a23d75bdeaca04c9c82f9b901f5ebd, type: 3}
   bulletName: 7.62
   bulletDescription: M4A1
   bulletMass: 0.5

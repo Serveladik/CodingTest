@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8295358692933626338}
   - component: {fileID: 8295358692933626337}
   m_Layer: 0
-  m_Name: BulletPrefab
+  m_Name: AK-47 bullet PREFAB 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8295358692933626332}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0000000063433, y: 1.5769999, z: -10}
-  m_LocalScale: {x: 0.014862119, y: 0.014862119, z: 0.014862119}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8295358692933626335
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8295358692933626332}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 8995504446017562283, guid: 67d8fefe0695bea45b6dbedc4526c6d6, type: 3}
 --- !u!23 &8295358692933626334
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94,10 +94,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Radius: 0.028475944
+  m_Height: 0.009503275
+  m_Direction: 2
+  m_Center: {x: 0.000000007450581, y: -0.000000004656613, z: 0.0060001574}
 --- !u!54 &8295358692933626338
 Rigidbody:
   m_ObjectHideFlags: 0

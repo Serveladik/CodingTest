@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+        rigidbody.mass = bulletData.BulletMass;
     }
     
     

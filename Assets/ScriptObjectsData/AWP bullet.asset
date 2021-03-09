@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a07894fbe5c2c146aa9d5b33d639bd2, type: 3}
   m_Name: AWP bullet
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5276325929786734298, guid: 6010fec5be154ef47a2cae2322764ae4, type: 3}
   bulletName: Magnum
   bulletDescription: AWP
   bulletMass: 5

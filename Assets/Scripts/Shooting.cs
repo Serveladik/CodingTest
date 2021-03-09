@@ -7,8 +7,9 @@ public class Shooting : MonoBehaviour
 {
     public static Shooting Instance;
     GameObject bulletsParent;
+
+    [SerializeField]private BulletData bulletDataPrefab;
     [SerializeField]private Transform muzzlePosition;
-    [SerializeField]private GameObject bulletPrefab;
     [SerializeField]private int maxBullets;
     [SerializeField]private int clipBullets;
     [SerializeField] [Range (0.01f,1f)] private float fireRate;
@@ -51,7 +52,7 @@ public class Shooting : MonoBehaviour
             timer+=Time.deltaTime;
             if(currentFireRate <=0)
             {
-                GameObject bullets = (GameObject)Instantiate(bulletPrefab,muzzlePosition.position, Quaternion.identity);
+                GameObject bullets = (GameObject)Instantiate(bulletDataPrefab.BulletPrefab,muzzlePosition.position, Quaternion.identity);
                 bullets.transform.parent = muzzlePosition;
                 bullets.transform.localRotation = Quaternion.Euler(90,0,0);
                 bullets.transform.parent = null;

@@ -13,6 +13,13 @@ public class BulletData : ScriptableObject
     [SerializeField]private float bulletDamage;
     [SerializeField]private float bulletSpeed;
 
+    public GameObject BulletPrefab
+    {
+        get
+        {
+            return bulletPrefab;
+        }
+    }
     public string BulletName
     {
         get
