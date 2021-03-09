@@ -6,7 +6,9 @@ using Unity.Collections;
 public class Shooting : MonoBehaviour
 {
     public static Shooting Instance;
-    [SerializeField]private GameObject bullet;
+    GameObject bulletsParent;
+    [SerializeField]private Transform muzzlePosition;
+    [SerializeField]private GameObject bulletPrefab;
     [SerializeField]private int maxBullets;
     [SerializeField]private int clipBullets;
     [SerializeField] [Range (0.01f,1f)] private float fireRate;
@@ -19,6 +21,8 @@ public class Shooting : MonoBehaviour
         Instance = this;
         
         currentFireRate = fireRate;
+        bulletsParent = new GameObject("BulletsParent");
+
     }
    
 
@@ -28,7 +32,6 @@ public class Shooting : MonoBehaviour
         
         if(timer>=1f)
         {
-            
             Debug.LogError("Shots Per Second: "+ shotsPerSecond);
             timer=0f;
             shotsPerSecond=0f;
@@ -48,6 +51,13 @@ public class Shooting : MonoBehaviour
             timer+=Time.deltaTime;
             if(currentFireRate <=0)
             {
+                GameObject bullets = (GameObject)Instantiate(bulletPrefab,muzzlePosition.position, Quaternion.identity);
+                bullets.transform.parent = muzzlePosition;
+                bullets.transform.localRotation = Quaternion.Euler(90,0,0);
+                bullets.transform.parent = null;
+                bullets.transform.parent = bulletsParent.transform;
+
+                
                 Debug.Log("BAM!");
                 shotsPerSecond++;
                 currentFireRate=fireRate;
