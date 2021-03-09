@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Bullet Data", menuName = "Bullet Data", order = 51)]
 public class BulletData : ScriptableObject
 {
+    [SerializeField]private GameObject bulletPrefab;
     [SerializeField]private string bulletName;
     [SerializeField]private string bulletDescription;
     [SerializeField]private float bulletMass;

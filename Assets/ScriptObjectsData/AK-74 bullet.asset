@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a07894fbe5c2c146aa9d5b33d639bd2, type: 3}
   m_Name: AK-74 bullet
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8295358692933626332, guid: 2bd9e40c68b8c3d4280d862c5e78a1ed, type: 3}
   bulletName: 5.56
   bulletDescription: AK-47,
-  bulletMass: 0.2
+  bulletMass: 0.1
   bulletDamage: 35
-  bulletSpeed: 5
+  bulletSpeed: 0.1
