@@ -30,7 +30,6 @@ public class Shooting : MonoBehaviour
 
     void CalculateShotsPerSecond()
     {
-        
         if(timer>=1f)
         {
             Debug.LogError("Shots Per Second: "+ shotsPerSecond);
@@ -39,7 +38,7 @@ public class Shooting : MonoBehaviour
         }
     }
     
-    void Update()
+    void FixedUpdate()
     {
         CalculateShotsPerSecond();
         Shoot();
@@ -52,14 +51,15 @@ public class Shooting : MonoBehaviour
             timer+=Time.deltaTime;
             if(currentFireRate <=0)
             {
-                GameObject bullets = (GameObject)Instantiate(bulletDataPrefab.BulletPrefab,muzzlePosition.position, Quaternion.identity);
-                bullets.transform.parent = muzzlePosition;
-                bullets.transform.localRotation = Quaternion.Euler(90,0,0);
-                bullets.transform.parent = null;
-                bullets.transform.parent = bulletsParent.transform;
+                GameObject bullets = (GameObject)Instantiate(bulletDataPrefab.BulletPrefab,muzzlePosition.position,muzzlePosition.rotation);
+                //new Vector2(gameObject.transform.position.x, gameObject.transform.position.y + 0.80f)
+                //bullets.transform.parent = muzzlePosition;
+                //bullets.transform.localRotation = Quaternion.Euler(90,0,0);
+                
 
                 
-                Debug.Log("BAM!");
+                
+                //Debug.Log(muzzlePosition.position);
                 shotsPerSecond++;
                 currentFireRate=fireRate;
             }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5784743753792701537}
   m_Layer: 8
   m_Name: AWP bullet TRANSFORM
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,6 +89,14 @@ PrefabInstance:
     - target: {fileID: 8295358692933626336, guid: 2bd9e40c68b8c3d4280d862c5e78a1ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626337, guid: 2bd9e40c68b8c3d4280d862c5e78a1ed, type: 3}
+      propertyPath: cleanDecals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626337, guid: 2bd9e40c68b8c3d4280d862c5e78a1ed, type: 3}
+      propertyPath: timeToDestroy
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8295358692933626338, guid: 2bd9e40c68b8c3d4280d862c5e78a1ed, type: 3}
       propertyPath: m_Mass

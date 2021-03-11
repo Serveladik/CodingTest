@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6893924318799789668}
   m_Layer: 8
   m_Name: AK-47 bullet TRANSFORM
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +46,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626333, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
+      propertyPath: m_Height
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626333, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
+      propertyPath: m_Radius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626333, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8295358692933626336, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56,7 +68,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8295358692933626336, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.034
       objectReference: {fileID: 0}
     - target: {fileID: 8295358692933626336, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
       propertyPath: m_LocalPosition.z
@@ -89,6 +101,14 @@ PrefabInstance:
     - target: {fileID: 8295358692933626336, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626337, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
+      propertyPath: cleanDecals
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295358692933626337, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
+      propertyPath: timeToDestroy
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8295358692933626338, guid: a3deb3af692ec7e4a88b845005818862, type: 3}
       propertyPath: m_UseGravity

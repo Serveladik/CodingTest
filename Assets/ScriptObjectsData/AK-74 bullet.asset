@@ -15,6 +15,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2261505595086048657, guid: d04e507dcab1a274894e60e7bedf9434, type: 3}
   bulletName: 5.56
   bulletDescription: AK-47,
-  bulletMass: 0.1
+  bulletMass: 0.3
   bulletDamage: 35
-  bulletSpeed: 10
+  bulletSpeed: 20
